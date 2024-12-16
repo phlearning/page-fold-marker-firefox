@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Displays fold markers on pages for printing guidance",
   "icons": {
-    "48": "icons/page-fold-marker.ico"
+    "48": "icons/page-fold-marker.png"
   },
   "permissions": ["activeTab"],
   "browser_action": {
