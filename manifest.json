@@ -3,6 +3,9 @@
   "name": "Page Fold Marker",
   "version": "1.0",
   "description": "Displays fold markers on pages for printing guidance",
+  "icons": {
+    "48": "icons/page-fold-marker.ico"
+  },
   "permissions": ["activeTab"],
   "browser_action": {
     "default_popup": "popup.html",
