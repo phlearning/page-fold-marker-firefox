@@ -1,0 +1,39 @@
+.fold-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.fold-marker {
+  position: absolute;
+  background: rgba(255, 0, 0, 0.5);
+  border: 1px dashed red;
+}
+
+.fold-marker.horizontal {
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.fold-marker.vertical {
+  top: 0;
+  width: 2px;
+  height: 100%;
+}
+
+@media print {
+  .fold-marker.horizontal {
+    background: none;
+    border-top: 1px dashed black;
+  }
+  
+  .fold-marker.vertical {
+    background: none;
+    border-left: 1px dashed black;
+  }
+}

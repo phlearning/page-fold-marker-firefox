@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Page Fold Marker",
+  "version": "1.0",
+  "description": "Displays fold markers on pages for printing guidance",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Page Fold Marker"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "css": ["folds.css"]
+  }]
+}
